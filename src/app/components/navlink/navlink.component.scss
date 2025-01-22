@@ -1,12 +1,14 @@
 .nav-link {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.3rem;
   display: flex;
+  border-radius: 50px;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .active .svg-path {

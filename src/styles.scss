@@ -23,3 +23,22 @@ button {
 .bg-primary {
   background-color: #f2f7ff;
 }
+
+.bg-secundary {
+  background-color: #1a1a1a;
+}
+
+.bg-active {
+  background-color: #000000;
+}
+
+.bg-inactive {
+  background-color: #ffffff;
+}
+
+.page-container {
+  position: relative;
+  border-radius: 8px;
+  width: 95vw;
+  height: 95vh;
+}
