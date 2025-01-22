@@ -7,16 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "lint-staged",
-    "lint:fix": "ng lint --fix",
     "prettier": "npx prettier --write .",
     "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.ts*": [
-      "pnpm prettier",
-      "pnpm lint:fix"
-    ]
   },
   "private": true,
   "dependencies": {

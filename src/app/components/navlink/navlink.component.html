@@ -1,0 +1,111 @@
+<div class="nav-link bg-primary">
+  <a [routerLink]="'/'">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21 19V12.267C21 11.7245 20.8896 11.1876 20.6756 10.689C20.4616 10.1905 20.1483 9.74069 19.755 9.36701L13.378 3.31001C13.0063 2.9569 12.5132 2.76001 12.0005 2.76001C11.4878 2.76001 10.9947 2.9569 10.623 3.31001L4.245 9.36701C3.85165 9.74069 3.53844 10.1905 3.3244 10.689C3.11037 11.1876 3 11.7245 3 12.267V19C3 19.5304 3.21071 20.0392 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0392 21 19.5304 21 19Z"
+        [attr.stroke]="getSvgColor('home')"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+      <path
+        d="M9 15C9 14.4696 9.21071 13.9609 9.58579 13.5858C9.96086 13.2107 10.4696 13 11 13H13C13.5304 13 14.0391 13.2107 14.4142 13.5858C14.7893 13.9609 15 14.4696 15 15V21H9V15Z"
+        [attr.stroke]="getSvgColor('home')"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </a>
+  <a [routerLink]="'/about'">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+        [attr.stroke]="getSvgColor('about')"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+      <path
+        d="M17 14H17.352C18.0831 14.0002 18.7889 14.2674 19.3369 14.7513C19.8849 15.2352 20.2373 15.9026 20.328 16.628L20.719 19.752C20.7542 20.0334 20.7291 20.3191 20.6454 20.5901C20.5617 20.8611 20.4214 21.1112 20.2336 21.3238C20.0459 21.5364 19.8151 21.7066 19.5566 21.8232C19.298 21.9398 19.0176 22.0001 18.734 22H5.266C4.98238 22.0001 4.70199 21.9398 4.44345 21.8232C4.1849 21.7066 3.9541 21.5364 3.76638 21.3238C3.57865 21.1112 3.43829 20.8611 3.3546 20.5901C3.27092 20.3191 3.24583 20.0334 3.281 19.752L3.671 16.628C3.7617 15.9022 4.11442 15.2346 4.66283 14.7506C5.21125 14.2667 5.91758 13.9997 6.649 14H7"
+        [attr.stroke]="getSvgColor('about')"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </a>
+  <a [routerLink]="'/projects'">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M10 15H4V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V8"
+        [attr.stroke]="getSvgColor('projects')"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+      <path
+        d="M2 18H14"
+        [attr.stroke]="getSvgColor('projects')"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+      <path
+        d="M14 9.2C14 8.537 14.597 8 15.333 8H20.667C21.403 8 22 8.537 22 9.2V18.8C22 19.463 21.403 20 20.667 20H15.333C14.597 20 14 19.463 14 18.8V9.2Z"
+        [attr.stroke]="getSvgColor('projects')"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+      <path
+        d="M18 17H18.01"
+        [attr.stroke]="getSvgColor('projects')"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </a>
+  <a [routerLink]="'/contact'">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_83_17)">
+        <path
+          d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+          [attr.stroke]="getSvgColor('contact')"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path
+          d="M22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C14.252 22 16.33 21.256 18.001 20"
+          [attr.stroke]="getSvgColor('contact')"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path
+          d="M16 8V12C16 13 16.6 15 19 15C21.4 15 22 13 22 12"
+          [attr.stroke]="getSvgColor('contact')"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_83_17">
+          <rect width="24" height="24" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  </a>
+</div>
