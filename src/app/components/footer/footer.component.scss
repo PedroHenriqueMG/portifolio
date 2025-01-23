@@ -1,0 +1,16 @@
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.fake-component {
+  margin-left: 1rem;
+  opacity: 0;
+  cursor: default;
+}

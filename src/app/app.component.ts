@@ -2,11 +2,12 @@ import { Component, OnInit } from "@angular/core";
 import { Router, RouterOutlet } from "@angular/router";
 import { NavlinkComponent } from "./components/navlink/navlink.component";
 import { ContactButtonComponent } from "./components/contact-button/contactButton.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, NavlinkComponent, ContactButtonComponent],
+  imports: [RouterOutlet, FooterComponent],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
 })

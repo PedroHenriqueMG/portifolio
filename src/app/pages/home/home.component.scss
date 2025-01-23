@@ -3,4 +3,203 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.tech-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.sistema-solar {
+  position: relative;
+  margin-bottom: 2rem;
+
+  display: flex;
+
+  .sol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .orbita-1,
+  .orbita-2 {
+    position: absolute;
+
+    border-radius: 50%;
+
+    .planeta-1 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      background-color: #f2f7ff;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .planeta-2 {
+      position: absolute;
+      bottom: 20%;
+      left: -5%;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f7ff;
+      border-radius: 50%;
+    }
+
+    .planeta-3 {
+      position: absolute;
+      right: -5%;
+      bottom: 20%;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f7ff;
+      border-radius: 50%;
+    }
+
+    .planeta-4 {
+      position: absolute;
+      left: 6%;
+      top: 12%;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f7ff;
+      border-radius: 50%;
+    }
+
+    .planeta-5 {
+      position: absolute;
+      right: 6%;
+      top: 12%;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f7ff;
+      border-radius: 50%;
+    }
+
+    .planeta-6 {
+      position: absolute;
+      left: 50%;
+      bottom: -13%;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f7ff;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    .planeta-7 {
+      position: absolute;
+      right: -1%;
+      bottom: 20%;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f7ff;
+      border-radius: 50%;
+    }
+
+    .planeta-8 {
+      position: absolute;
+      left: -1%;
+      bottom: 20%;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f7ff;
+      border-radius: 50%;
+    }
+
+    .atmosfera-1,
+    .atmosfera-2 {
+      position: relative;
+    }
+  }
+
+  .orbita-1 {
+    width: 250px;
+    height: 250px;
+
+    top: calc(50% - calc(250px / 2));
+    left: calc(50% - calc(250px / 2));
+
+    border: 3px solid #f2f7ff;
+
+    animation: spin 10s linear infinite;
+  }
+
+  .orbita-2 {
+    width: 400px;
+    height: 400px;
+
+    top: calc(50% - calc(400px / 2));
+    left: calc(50% - calc(400px / 2));
+
+    border: 3px solid #f2f7ff;
+
+    animation: spin 15s linear infinite;
+  }
+}
+
+.scroll-button {
+  position: relative;
+  bottom: -30%;
+  right: 0;
+  display: flex;
+  gap: 5px;
+  padding: 0.8rem 1.3rem;
+  border: #f2f7ff 2px solid;
+  color: #f2f7ff;
+  border-radius: 8px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
