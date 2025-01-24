@@ -3,10 +3,17 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .profile-img {
@@ -24,8 +31,6 @@
 .sistema-solar {
   position: relative;
   margin-bottom: 2rem;
-
-  display: flex;
 
   .sol {
     position: absolute;
@@ -170,17 +175,48 @@
   }
 }
 
+.description {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 .scroll-button {
   position: relative;
   bottom: -30%;
   right: 0;
-  display: flex;
   gap: 5px;
   padding: 0.8rem 1.3rem;
   border: #f2f7ff 2px solid;
   color: #f2f7ff;
   border-radius: 8px;
   animation: pulse 2s infinite;
+}
+
+.fake-component {
+  position: relative;
+  bottom: -60%;
+  opacity: 0;
+  right: 0;
+  cursor: default;
+}
+
+.typing-container {
+  font-family: "JetBrains Mono", serif;
+  font-size: 1.5rem;
+  color: #f2f7ff;
+  text-align: center;
+  width: fit-content;
+}
+
+.typing-text {
+  display: inline-block;
 }
 
 @keyframes spin {
@@ -201,5 +237,11 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }

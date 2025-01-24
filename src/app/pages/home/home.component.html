@@ -1,5 +1,5 @@
-<section class="page-container home-section">
-  <div class="sistema-solar">
+<section class="page-container home-section" (scroll)="scrollDown($event)">
+  <div class="sistema-solar" [class]="isScroll ? 'hidden' : 'flex'">
     <div class="sol">
       <img class="profile-img" src="../../assets/profile.jpeg" alt="profile" />
     </div>
@@ -33,8 +33,14 @@
       </div>
     </div>
   </div>
-  <div class="scroll-button">
+  <div class="description" [class]="isScroll ? 'flex' : 'hidden'">
+    <div class="typing-container">
+      <p class="typing-text" [innerHTML]="typedText"></p>
+    </div>
+  </div>
+  <div class="scroll-button" [class]="isScroll ? 'hidden' : 'flex'">
     <p>Scroll to bottom</p>
     <img src="../../assets/mouse.svg" alt="scroll" />
   </div>
+  <p class="fake-component">fake</p>
 </section>
