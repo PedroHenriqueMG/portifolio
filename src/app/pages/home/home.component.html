@@ -1,46 +1,142 @@
-<section class="page-container home-section" (scroll)="scrollDown($event)">
-  <div class="sistema-solar" [class]="isScroll ? 'hidden' : 'flex'">
-    <div class="sol">
-      <img class="profile-img" src="../../assets/profile.jpeg" alt="profile" />
-    </div>
-    <div class="orbita-1">
-      <div class="planeta-1">
-        <img class="tech-img" src="../../assets/nextjs.svg" alt="tech" />
-      </div>
-      <div class="planeta-2">
-        <img class="tech-img" src="../../assets/javascript.svg" alt="tech" />
-      </div>
-      <div class="planeta-3">
-        <img class="tech-img" src="../../assets/angular.png" alt="tech" />
-      </div>
-    </div>
+<section class="page-container home-section">
+  <div class="header">
+    <div class="left-content">
+      <a>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.429 8.969H13.143V10.819C13.678 9.755 15.05 8.799 17.111 8.799C21.062 8.799 22 10.917 22 14.803V22H18V15.688C18 13.475 17.465 12.227 16.103 12.227C14.214 12.227 13.429 13.572 13.429 15.687V22H9.429V8.969ZM2.57 21.83H6.57V8.799H2.57V21.83ZM7.143 4.55C7.14315 4.88528 7.07666 5.21724 6.94739 5.52659C6.81812 5.83594 6.62865 6.11651 6.39 6.352C5.9064 6.83262 5.25181 7.10165 4.57 7.1C3.88939 7.09954 3.23631 6.8312 2.752 6.353C2.51421 6.11671 2.32539 5.83582 2.19634 5.52643C2.0673 5.21704 2.00058 4.88522 2 4.55C2 3.873 2.27 3.225 2.753 2.747C3.23689 2.26816 3.89024 1.9997 4.571 2C5.253 2 5.907 2.269 6.39 2.747C6.872 3.225 7.143 3.873 7.143 4.55Z"
+            fill="#F2F7FF" />
+        </svg>
+      </a>
 
-    <div class="orbita-2">
-      <div class="planeta-4">
-        <img class="tech-img" src="../../assets/typescript.svg" alt="tech" />
+      <a>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.422 20.081C8.422 20.977 8.432 21.834 8.438 22.366C8.43912 22.4946 8.4804 22.6196 8.55606 22.7236C8.63172 22.8276 8.73799 22.9054 8.86 22.946C10.938 23.632 13.177 23.664 15.274 23.037L15.566 22.95C15.7035 22.9089 15.8242 22.8247 15.9102 22.7098C15.9963 22.595 16.0432 22.4555 16.044 22.312C16.049 21.579 16.061 20.295 16.061 18.782C16.061 17.41 15.584 16.532 15.03 16.075C18.429 15.709 22 14.465 22 8.84801C22 7.23801 21.408 5.93801 20.434 4.91401C20.587 4.54801 21.122 3.04801 20.281 1.03601C20.281 1.03601 19.001 0.63301 16.08 2.53601C14.8337 2.20519 13.5494 2.03911 12.26 2.04201C10.962 2.04201 9.663 2.20701 8.441 2.53601C5.52 0.65001 4.24 1.03601 4.24 1.03601C3.4 3.04801 3.934 4.54801 4.087 4.91401C3.06703 5.96777 2.50424 7.38156 2.521 8.84801C2.521 14.446 6.073 15.708 9.472 16.075C9.033 16.441 8.632 17.081 8.499 18.032C7.62 18.416 5.424 19.038 4.049 16.825C3.763 16.385 2.903 15.306 1.7 15.325C0.419998 15.343 1.184 16.02 1.72 16.295C2.368 16.642 3.113 17.941 3.285 18.362C3.591 19.185 4.584 20.758 8.422 20.082V20.081Z"
+            fill="#F2F7FF" />
+        </svg>
+      </a>
+
+      <div class="text-header">
+        <svg
+          width="4"
+          height="5"
+          viewBox="0 0 4 5"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect y="0.5" width="4" height="4" rx="2" fill="#8950D1" />
+        </svg>
+
+        <p class="title">Avaliable to work</p>
       </div>
-      <div class="planeta-5">
-        <img class="tech-img" src="../../assets/golang.png" alt="tech" />
+    </div>
+    <div class="right-content">
+      <div class="search">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21 21L16.514 16.506M19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5Z"
+            stroke="#F2F7FF"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <p>Ctrl + K</p>
       </div>
-      <div class="planeta-6">
-        <img class="tech-img" src="../../assets/nodejs.svg" alt="tech" />
-      </div>
-      <div class="planeta-7">
-        <img class="tech-img" src="../../assets/react.svg" alt="tech" />
-      </div>
-      <div class="planeta-8">
-        <img class="tech-img" src="../../assets/fastify.svg" alt="tech" />
+
+      <div class="config">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_37_36)">
+            <path
+              d="M14 3.269C14 2.568 13.432 2 12.731 2H11.27C10.568 2 10 2.568 10 3.269C10 3.847 9.604 4.343 9.065 4.555C8.98 4.589 8.895 4.625 8.812 4.661C8.281 4.891 7.65 4.821 7.24 4.412C7.00204 4.17421 6.6794 4.04064 6.343 4.04064C6.0066 4.04064 5.68396 4.17421 5.446 4.412L4.412 5.446C4.17421 5.68396 4.04064 6.0066 4.04064 6.343C4.04064 6.6794 4.17421 7.00204 4.412 7.24C4.822 7.65 4.892 8.28 4.66 8.812C4.62355 8.89572 4.58854 8.98007 4.555 9.065C4.343 9.604 3.847 10 3.269 10C2.568 10 2 10.568 2 11.269V12.731C2 13.432 2.568 14 3.269 14C3.847 14 4.343 14.396 4.555 14.935C4.589 15.02 4.625 15.105 4.66 15.188C4.891 15.719 4.821 16.35 4.412 16.76C4.17421 16.998 4.04064 17.3206 4.04064 17.657C4.04064 17.9934 4.17421 18.316 4.412 18.554L5.446 19.588C5.68396 19.8258 6.0066 19.9594 6.343 19.9594C6.6794 19.9594 7.00204 19.8258 7.24 19.588C7.65 19.178 8.28 19.108 8.812 19.339C8.895 19.376 8.98 19.411 9.065 19.445C9.604 19.657 10 20.153 10 20.731C10 21.432 10.568 22 11.269 22H12.731C13.432 22 14 21.432 14 20.731C14 20.153 14.396 19.657 14.935 19.444C15.02 19.411 15.105 19.376 15.188 19.34C15.719 19.108 16.35 19.179 16.759 19.588C16.8768 19.7059 17.0168 19.7994 17.1708 19.8632C17.3248 19.927 17.4898 19.9599 17.6565 19.9599C17.8232 19.9599 17.9882 19.927 18.1422 19.8632C18.2962 19.7994 18.4362 19.7059 18.554 19.588L19.588 18.554C19.8258 18.316 19.9594 17.9934 19.9594 17.657C19.9594 17.3206 19.8258 16.998 19.588 16.76C19.178 16.35 19.108 15.72 19.339 15.188C19.376 15.105 19.411 15.02 19.445 14.935C19.657 14.396 20.153 14 20.731 14C21.432 14 22 13.432 22 12.731V11.27C22 10.569 21.432 10.001 20.731 10.001C20.153 10.001 19.657 9.605 19.444 9.066C19.4105 8.98106 19.3755 8.89671 19.339 8.813C19.109 8.282 19.179 7.651 19.588 7.241C19.8258 7.00304 19.9594 6.6804 19.9594 6.344C19.9594 6.0076 19.8258 5.68496 19.588 5.447L18.554 4.413C18.316 4.17521 17.9934 4.04164 17.657 4.04164C17.3206 4.04164 16.998 4.17521 16.76 4.413C16.35 4.823 15.72 4.893 15.188 4.662C15.1043 4.62521 15.0199 4.58987 14.935 4.556C14.396 4.343 14 3.846 14 3.269Z"
+              stroke="#2D2F4A"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M16 12C16 13.0609 15.5786 14.0783 14.8284 14.8284C14.0783 15.5786 13.0609 16 12 16C10.9391 16 9.92172 15.5786 9.17157 14.8284C8.42143 14.0783 8 13.0609 8 12C8 10.9391 8.42143 9.92172 9.17157 9.17157C9.92172 8.42143 10.9391 8 12 8C13.0609 8 14.0783 8.42143 14.8284 9.17157C15.5786 9.92172 16 10.9391 16 12Z"
+              stroke="#2D2F4A"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </g>
+          <defs>
+            <clipPath id="clip0_37_36">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
       </div>
     </div>
   </div>
-  <div class="description" [class]="isScroll ? 'flex' : 'hidden'">
-    <div class="typing-container">
-      <p class="typing-text" [innerHTML]="typedText"></p>
+  <div class="content" (scroll)="scrollDown($event)">
+    <div class="sistema-solar" [class]="isScroll ? 'hidden' : 'flex'">
+      <div class="sol">
+        <img
+          class="profile-img"
+          src="../../assets/profile.jpeg"
+          alt="profile" />
+      </div>
+      <div class="orbita-1">
+        <div class="planeta-1">
+          <img class="tech-img" src="../../assets/nextjs.svg" alt="tech" />
+        </div>
+        <div class="planeta-2">
+          <img class="tech-img" src="../../assets/javascript.svg" alt="tech" />
+        </div>
+        <div class="planeta-3">
+          <img class="tech-img" src="../../assets/angular.png" alt="tech" />
+        </div>
+      </div>
+
+      <div class="orbita-2">
+        <div class="planeta-4">
+          <img class="tech-img" src="../../assets/typescript.svg" alt="tech" />
+        </div>
+        <div class="planeta-5">
+          <img class="tech-img" src="../../assets/golang.png" alt="tech" />
+        </div>
+        <div class="planeta-6">
+          <img class="tech-img" src="../../assets/nodejs.svg" alt="tech" />
+        </div>
+        <div class="planeta-7">
+          <img class="tech-img" src="../../assets/react.svg" alt="tech" />
+        </div>
+        <div class="planeta-8">
+          <img class="tech-img" src="../../assets/fastify.svg" alt="tech" />
+        </div>
+      </div>
     </div>
+    <div class="description" [class]="isScroll ? 'flex' : 'hidden'">
+      <div class="typing-container">
+        <p class="typing-text" [innerHTML]="typedText"></p>
+      </div>
+    </div>
+    <div class="scroll-button" [class]="isScroll ? 'hidden' : 'flex'">
+      <p>Scroll to bottom</p>
+      <img src="../../assets/mouse.svg" alt="scroll" />
+    </div>
+    <p class="fake-component">fake</p>
   </div>
-  <div class="scroll-button" [class]="isScroll ? 'hidden' : 'flex'">
-    <p>Scroll to bottom</p>
-    <img src="../../assets/mouse.svg" alt="scroll" />
-  </div>
-  <p class="fake-component">fake</p>
 </section>

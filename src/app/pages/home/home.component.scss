@@ -6,6 +6,64 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: #8950d1;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search {
+  border: 2px solid #f2f7ff;
+  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f2f7ff;
+}
+
+.config {
+  background-color: #f2f7ff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
 
@@ -30,6 +88,7 @@
 
 .sistema-solar {
   position: relative;
+  z-index: 100;
   margin-bottom: 2rem;
 
   .sol {
@@ -208,6 +267,9 @@
 }
 
 .typing-container {
+  position: relative;
+  bottom: -100%;
+  right: 0;
   font-family: "JetBrains Mono", serif;
   font-size: 1.5rem;
   color: #f2f7ff;
