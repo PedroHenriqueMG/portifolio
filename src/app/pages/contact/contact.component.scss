@@ -1,0 +1,165 @@
+span {
+  color: #8950d1;
+}
+
+.section-contact {
+  padding-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .container-top {
+    .content-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .text {
+        color: #6e7a93;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+
+    .title {
+      color: #1a1a1a;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .line {
+      height: 2px;
+      background-color: #cfd8e4;
+      width: 100px;
+    }
+  }
+
+  .container-mid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .container-left {
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .card-user {
+        border-radius: 8px;
+        position: relative;
+        width: 472px;
+        height: 400px;
+        border: 1px solid #000000;
+
+        .content-tech {
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          width: 100%;
+          background: linear-gradient(to right, #000000, #6e7a93);
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          padding: 1.2rem 0px;
+        }
+
+        .content-user {
+          position: absolute;
+          left: 5%;
+          top: 8%;
+          width: 102px;
+          height: 102px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #000000;
+          border-radius: 50%;
+
+          .user-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        .content-description {
+          margin-top: 3.5rem;
+          margin-left: 1rem;
+
+          .content-text {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+
+            .user-text {
+              color: #000000;
+              font-size: 20px;
+              font-weight: 500;
+            }
+
+            .job-text {
+              color: #000000;
+              font-size: 12px;
+              font-weight: 500;
+            }
+
+            .location-text {
+              color: #000000;
+              font-size: 12px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    .container-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .card-contact {
+        width: 337px;
+        height: 162px;
+        border: 2px solid #1a1a1a;
+        display: flex;
+        border-radius: 8px;
+        position: relative;
+
+        .content-contact {
+          display: flex;
+          margin-top: 0.5rem;
+          margin-left: 1rem;
+          gap: 1.5rem;
+          height: 70px;
+          align-items: center;
+
+          .name {
+            color: #1a1a1a;
+            font-size: 16px;
+            font-weight: 400;
+          }
+
+          .description {
+            color: #1a1a1a;
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .call-button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: #8950d1;
+        padding: 0.5rem 1rem;
+        font-size: 12px;
+        color: #f2f7ff;
+        border-top-left-radius: 8px;
+      }
+    }
+  }
+}

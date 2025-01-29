@@ -9,7 +9,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class HomeComponent implements OnInit {
   typedText = "";
-  fullText = `Olá, me chamo Pedro Henrique,<br>sou desenvolvedor Fullstack, seja bem-vindo ao meu portifólio!<br> Fique a vontade para navegar pelo site!`;
+  fullText = `Olá, me chamo Pedro Henrique,<br>sou Engenheiro de Software, seja bem-vindo ao meu portifólio!<br> Fique a vontade para navegar pelo site!`;
   isScroll = false;
   hasStartedTyping = false;
 

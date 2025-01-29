@@ -7,4 +7,13 @@ import { Component } from "@angular/core";
   templateUrl: "./about.component.html",
   styleUrl: "./about.component.scss",
 })
-export class AboutComponent {}
+export class AboutComponent {
+  downloadResume() {
+    const resumeURL = "../../assets/Curriculo.pdf";
+
+    const link = document.createElement("a");
+    link.href = resumeURL;
+    link.download = "pedro-resume.pdf";
+    link.click();
+  }
+}
