@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { ContactPopupService } from "../../services/contact-popup.service";
 
 @Component({
   selector: "contact-button",
@@ -12,7 +13,10 @@ export class ContactButtonComponent implements OnInit {
   currentPath: string = "";
   isHome = false;
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private contactPopupService: ContactPopupService
+  ) {}
 
   ngOnInit(): void {
     this.router.events.subscribe(() => {
@@ -24,5 +28,9 @@ export class ContactButtonComponent implements OnInit {
         this.isHome = false;
       }
     });
+  }
+
+  openContactPopup() {
+    this.contactPopupService.openPopup();
   }
 }

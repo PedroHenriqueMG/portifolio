@@ -1,4 +1,7 @@
-<button class="contact-button" [class]="isHome ? 'bg-primary' : 'bg-secundary'">
+<button
+  class="contact-button"
+  [class]="isHome ? 'bg-primary' : 'bg-secundary'"
+  (click)="openContactPopup()">
   <svg
     width="24"
     height="24"

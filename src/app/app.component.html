@@ -1,4 +1,7 @@
 <div class="app-container" [class]="isActive()">
   <router-outlet />
   <footer></footer>
+  <contact-popup
+    *ngIf="showContactPopup$ | async"
+    (close)="closeContactPopup()"></contact-popup>
 </div>
