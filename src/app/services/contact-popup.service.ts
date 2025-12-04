@@ -9,7 +9,7 @@ export class ContactPopupService {
   showPopup$ = this.showPopupSubject.asObservable();
 
   openPopup() {
-    this.showPopupSubject.next(true);
+    this.showPopupSubject.next(!this.showPopupSubject.value);
   }
 
   closePopup() {

@@ -1,8 +1,16 @@
 <div class="popup-overlay">
   <div class="popup-content">
     <button class="close-btn" (click)="close.emit()">&times;</button>
-    <h2>Contact Me</h2>
-    <!-- Add your contact form or info here -->
-    <p>Email:</p>
+    <form action="https://formspree.io/f/xblnkdkp" method="POST" class="form">
+      <label>
+        Email:
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Mensagem:
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
   </div>
 </div>
