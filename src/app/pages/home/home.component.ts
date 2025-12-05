@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
       } else {
         clearInterval(interval);
       }
-    }, 50);
+    }, 20);
   }
   scrollDown(teste: Event) {
     const target = teste.target as HTMLDivElement;
