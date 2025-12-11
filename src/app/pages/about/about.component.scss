@@ -32,8 +32,13 @@
     justify-content: center;
     gap: 1rem;
 
+    .content-left {
+      height: 100%;
+    }
+
     .card-profile {
       border-radius: 8px;
+      height: 100%;
       padding: 3rem;
       display: flex;
       flex-direction: column;
@@ -113,6 +118,7 @@
 
       .tech-card {
         height: 100%;
+        padding: 10px;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
